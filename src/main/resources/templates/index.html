@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Our WebApp</title>
+  <style>
+    .container {
+      margin: 10px auto;
+      width: 900px;
+    }
+    .container h1 {
+      color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello to Our App from <span th:text="${author}"></span></h1>
+  </div>
+</body>
+</html>
