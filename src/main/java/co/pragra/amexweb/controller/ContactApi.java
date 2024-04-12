@@ -28,4 +28,9 @@ public class ContactApi {
     public Contact update(@RequestBody  Contact contact) {
         return dao.update(contact);
     }
+
+    @GetMapping("/hello")
+    public String demo(){
+        return "Hello World";
+    }
 }
